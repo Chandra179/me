@@ -10,21 +10,15 @@ const Education = () => {
 
   const education = [
     {
-      degree: "Master of Computer Science",
-      institution: "Stanford University",
-      period: "2019 - 2021",
-      description: "Specialized in Machine Learning and Distributed Systems. Thesis on 'Optimizing Neural Networks for Edge Computing Devices'."
-    },
-    {
-      degree: "Bachelor of Science in Computer Engineering",
-      institution: "Massachusetts Institute of Technology",
-      period: "2015 - 2019",
-      description: "Graduated with honors. Active member of the Robotics Club and ACM student chapter."
+      degree: "Bachelor of Science in Computer Science",
+      institution: "Univesitas Multimedia Nusantara",
+      period: "2017 - 2021"
+      // description: "GPA: 3.75/4.00"
     }
   ];
 
   return (
-    <section className="section pb-32" style={{ animationDelay: '0.7s', opacity: isLoaded ? 1 : 0 }}>
+    <section className="section pt-12 pb-32" style={{ animationDelay: '0.7s', opacity: isLoaded ? 1 : 0 }}>
       <div className="content-container">
         <h2 className="section-title">Education</h2>
         
@@ -36,7 +30,7 @@ const Education = () => {
                 <span className="text-sm text-muted-foreground whitespace-nowrap ml-4">{item.period}</span>
               </div>
               <p className="text-muted-foreground mb-2">{item.institution}</p>
-              <p className="text-sm">{item.description}</p>
+              {/* <p className="text-sm">{item.description}</p> */}
             </div>
           ))}
         </div>

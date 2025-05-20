@@ -7,61 +7,34 @@ import { Card } from "@/components/ui/card";
 const items = [
   {
     id: 1,
-    title: "E-commerce Platform Redesign",
-    description: "Rebuilt the front-end architecture of a major e-commerce platform, improving performance metrics by 40%.",
-    date: "2023",
-    type: "project",
-    tags: ["React", "TypeScript", "Redux", "Tailwind CSS"],
-    link: "#"
+    title: "Avoiding += for String Concatenation in Golang",
+    description: "how to optimize string concatenation in go",
+    date: "Nov 2024",
+    type: "blog",
+    tags: ["Golang", "Optimization"],
+    link: "https://medium.com/stackademic/avoiding-for-string-concatenation-in-golang-8149822f3341"
   },
   {
     id: 2,
-    title: "Building Scalable Backend Services",
-    description: "A deep dive into building microservices with Node.js and Docker.",
-    date: "May 2023",
+    title: "Mutable & Immutable Java DateTime API",
+    description: "why we should use immutable datetime class",
+    date: "Aug 2024",
     type: "blog",
-    tags: ["Backend", "Node.js", "Microservices", "Docker"],
-    link: "#"
+    tags: ["Java", "DateTime"],
+    link: "https://blog.stackademic.com/mutable-immutable-java-datetime-api-6b26e6d395d3"
   },
   {
     id: 3,
-    title: "Inventory Management System",
-    description: "Developed an inventory tracking system that reduced manual errors by 85%.",
-    date: "2022",
-    type: "project",
-    tags: ["Vue.js", "Express", "MongoDB", "Socket.io"],
-    link: "#"
-  },
-  {
-    id: 4,
-    title: "The Art of Clean Code",
-    description: "Discussing principles and practices for writing maintainable code.",
-    date: "February 2023",
+    title: "Grafana Agent: Reading Docker Logs From Stdout",
+    description: "Log aggregator with grafana loki",
+    date: "Feb 2025",
     type: "blog",
-    tags: ["Clean Code", "Best Practices", "Architecture"],
-    link: "#"
-  },
-  {
-    id: 5,
-    title: "Machine Learning Recommendation Engine",
-    description: "Built a product recommendation engine that increased conversion rates by 23%.",
-    date: "2022",
-    type: "project",
-    tags: ["Python", "TensorFlow", "Flask", "AWS"],
-    link: "#"
-  },
-  {
-    id: 6,
-    title: "Modern Authentication Patterns",
-    description: "Exploring secure authentication strategies for modern applications.",
-    date: "November 2022",
-    type: "blog",
-    tags: ["Security", "Auth", "JWT", "OAuth"],
-    link: "#"
+    tags: ["Grafana", "Loki"],
+    link: "https://medium.com/stackademic/centralized-log-aggregation-with-loki-grafana-and-the-grafana-agent-853ced0a69a6"
   }
 ];
 
-const ProjectsAndBlog = () => {
+const Blog = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [isLoaded, setIsLoaded] = useState(false);
   const itemsPerPage = 3;
@@ -85,9 +58,9 @@ const ProjectsAndBlog = () => {
   };
 
   return (
-    <section id="projects-blog" className="section" style={{ animationDelay: '0.3s', opacity: isLoaded ? 1 : 0 }}>
+    <section id="projects-blog" className="section" style={{ opacity: isLoaded ? 1 : 0 }}>
       <div className="content-container">
-        <h2 className="section-title">Projects & Writing</h2>
+        <h2 className="section-title">Blog</h2>
         
         <div className="space-y-8 mb-8">
           {currentItems.map(item => (
@@ -140,4 +113,4 @@ const ProjectsAndBlog = () => {
   );
 };
 
-export default ProjectsAndBlog;
+export default Blog;

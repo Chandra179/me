@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Badge } from "@/components/ui/badge";
 
@@ -12,24 +11,20 @@ const Skills = () => {
   const skillCategories = [
     {
       name: "Languages",
-      skills: ["JavaScript", "TypeScript", "Python", "Java", "Go", "SQL", "HTML", "CSS"]
+      skills: ["Golang", "Java", "Javascript"]
     },
     {
       name: "Frameworks & Libraries",
-      skills: ["React", "Next.js", "Node.js", "Express", "Vue.js", "Angular", "Django", "Spring Boot"]
+      skills: ["Spring Boot", "SolidJS"]
     },
     {
       name: "Tools & Platforms",
-      skills: ["Git", "Docker", "Kubernetes", "AWS", "Firebase", "CI/CD", "Jest", "Webpack"]
-    },
-    {
-      name: "Practices",
-      skills: ["Test-Driven Development", "Agile/Scrum", "Microservices", "RESTful API Design", "GraphQL", "System Design"]
+      skills: ["Docker", "Datadog", "Temporal", "ArgoCD", "PostgreSQL", "RabbitMQ", "ArangoDB", "Redis", "OpenAPI", "gRPC", "Oauth2"]
     }
   ];
 
   return (
-    <section className="section" style={{ animationDelay: '0.5s', opacity: isLoaded ? 1 : 0 }}>
+    <section className="section pt-3" style={{ opacity: isLoaded ? 1 : 0 }}>
       <div className="content-container">
         <h2 className="section-title">Skills</h2>
         

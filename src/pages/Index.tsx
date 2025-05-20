@@ -1,6 +1,5 @@
-
 import Introduction from "@/components/Introduction";
-import ProjectsAndBlog from "@/components/ProjectsAndBlog";
+import Tabs from "@/components/Tabs";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import Footer from "@/components/Footer";
@@ -10,7 +9,7 @@ const Index = () => {
     <div className="min-h-screen">
       <main className="py-12">
         <Introduction />
-        <ProjectsAndBlog />
+        <Tabs />
         <Skills />
         <Education />
       </main>

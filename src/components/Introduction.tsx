@@ -9,15 +9,13 @@ const Introduction = () => {
   }, []);
 
   return (
-    <section className="section py-20" style={{ animationDelay: '0.1s', opacity: isLoaded ? 1 : 0 }}>
+    <section className="section py-5" style={{ animationDelay: '0.1s', opacity: isLoaded ? 1 : 0 }}>
       <div className="content-container">
-        <h1 className="text-4xl md:text-5xl mb-8">Hello, I'm <span className="font-bold">John Doe</span>.</h1>
+        <h1 className="text-4xl md:text-5xl mb-8">Hello, I'm <span className="font-bold">Chandra</span>.</h1>
         <p className="text-lg md:text-xl leading-relaxed mb-4">
-          I'm a software engineer specializing in building exceptional digital experiences.
-          Currently, I'm focused on creating accessible, human-centered products at <a href="#" className="underline hover:text-gray-700 transition-colors">Company Name</a>.
-        </p>
-        <p className="text-lg md:text-xl leading-relaxed">
-          I value clean code, thoughtful interfaces, and scalable architecture.
+          I'm a Software Engineer with three years of experience in a <a href="#" className="underline hover:text-gray-700 transition-colors">multifinance company</a>. 
+          My main focus is backend development using Golang, and I'm good at thinking through abstract problems. 
+          I'm also interested in economy and investing, and I can explain things clearly.
         </p>
       </div>
     </section>
